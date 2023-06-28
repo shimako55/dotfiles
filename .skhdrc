@@ -1,0 +1,34 @@
+# Focus Window
+ctrl + shift - h: yabai -m window --focus west || yabai -m display --focus west
+ctrl + shift - l: yabai -m window --focus east || yabai -m display --focus east
+ctrl + shift - j: yabai -m window --focus south || yabai -m display --focus south
+ctrl + shift - k: yabai -m window --focus north || yabai -m display --focus north
+
+# set insertion point in focused container
+ctrl + alt - h : yabai -m window --insert west
+ctrl + alt - l : yabai -m window --insert east
+ctrl + alt - j : yabai -m window --insert south
+ctrl + alt - k : yabai -m window --insert north
+
+# swap window
+alt + cmd - h: yabai -m window --swap west
+alt + cmd - l: yabai -m window --swap east
+alt + cmd - j: yabai -m window --swap south
+alt + cmd - k: yabai -m window --swap north
+
+# warp window
+shift + cmd - h : yabai -m window --warp west
+shift + cmd - l : yabai -m window --warp east
+shift + cmd - j : yabai -m window --warp south
+shift + cmd - k : yabai -m window --warp north
+
+# rotate tree
+alt - r : yabai -m space --rotate 90
+
+# float
+alt - t : yabai -m window --toggle float;\
+          yabai -m window --grid 20:20:1:1:18:18
+
+# toggle window zoom
+alt - f : yabai -m window --toggle zoom-fullscreen
+

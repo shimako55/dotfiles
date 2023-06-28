@@ -1,0 +1,13 @@
+echo "loading interactive and login shell alias"
+
+# coreutils
+alias ..='cd ..'
+alias rm='rm -i'
+alias ls='ls -la --color=auto'
+alias ll='ls -laF --color=auto'
+alias df='df -h'
+alias du='du -h'
+alias mkdir='mkdir -p'
+
+
+alias grep='grep --color=auto'
