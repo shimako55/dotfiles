@@ -16,3 +16,6 @@ export PATH=$PATH:$(go env GOPATH)/bin
 
 # Warpify subshell
 printf '\eP$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "zsh"}}\x9c'
+
+# zoxide
+eval "$(zoxide init zsh --cmd=j)"

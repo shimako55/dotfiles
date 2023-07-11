@@ -45,6 +45,7 @@ brew "tldr"
 brew "tree"
 brew "w3m"
 brew "yq"
+brew "zoxide"
 brew "koekeishiya/formulae/skhd"
 brew "koekeishiya/formulae/yabai"
 cask "1password"
@@ -74,6 +75,7 @@ cask "warp"
 mas "Amphetamine", id: 937984704
 mas "Expressions", id: 913158085
 mas "Glide", id: 1593045116
+mas "PopClip", id: 445189367
 mas "RunCat", id: 1429033973
 vscode "bradlc.vscode-tailwindcss"
 vscode "codezombiech.gitignore"
