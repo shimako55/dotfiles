@@ -18,7 +18,7 @@
                 },
                 "rules": [
                     {
-                        "description": "Control-j sends EISU ESC ESC when language is ja",
+                        "description": "Control-[ sends EISU ESC ESC when language is ja",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -32,7 +32,7 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "j",
+                                    "key_code": "[",
                                     "modifiers": {
                                         "mandatory": [
                                             "control"
@@ -55,7 +55,7 @@
                         ]
                     },
                     {
-                        "description": "Control-j sends ESC when language is en",
+                        "description": "Control-[ sends ESC when language is en",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -69,7 +69,7 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "j",
+                                    "key_code": "[",
                                     "modifiers": {
                                         "mandatory": [
                                             "control"
