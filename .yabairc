@@ -18,11 +18,12 @@ yabai -m rule --add app="^ディスクユーティリティ|Disk Utility$"      
 yabai -m rule --add app="^Finder$"                                          manage=off
 yabai -m rule --add app="^システム設定|System Settings|System Preferences$" manage=off
 yabai -m rule --add app="^Goland$"                                          manage=off
-yabai -m rule --add app="^Yubico Authenticator$"			    manage=off
-yabai -m rule --add app="^Yamaha ZG Controller$"			    manage=off
-yabai -m rule --add app="^iTerm2$"			          	    manage=off
-yabai -m rule --add app="^DeepL$"			          	    manage=off
-yabai -m rule --add app="^AppCleaner$"			          	    manage=off
+yabai -m rule --add app="^Yubico Authenticator$"                            manage=off
+yabai -m rule --add app="^Yamaha ZG Controller$"                            manage=off
+yabai -m rule --add app="^iTerm2$"                                          manage=off
+yabai -m rule --add app="^DeepL$"                                           manage=off
+yabai -m rule --add app="^AppCleaner$"                                      manage=off
+yabai -m rule --add app="^プレビュー|Preview$"                              manage=off
 
 
 # global settings

@@ -1,4 +1,4 @@
-echo "loading env"
+echo "loading zshenv"
 
 export PATH="${HOMEBREW_PREFIX}/opt/openssl/bin:$PATH"
 
@@ -9,5 +9,3 @@ export HISTSIZE=1000
 export SAVEHIST=100000
 setopt hist_ignore_dups
 
-# Aliases in env shell
-[[ -f $ZDOTDIR/.zsh_aliases_env ]] && . $ZDOTDIR/.zsh_aliases_env

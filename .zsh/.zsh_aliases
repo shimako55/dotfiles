@@ -9,5 +9,55 @@ alias df='df -h'
 alias du='du -h'
 alias mkdir='mkdir -p'
 
-
 alias grep='grep --color=auto'
+
+# GNU
+if [[ -x `which gsed` ]]; then
+  alias sed="gsed"
+fi
+if [[ -x `which tree` ]]; then
+  alias tree="tree -I 'node_modules|vendor' -L 5"
+fi
+
+# OSX
+if [[ -x `which pbcopy` ]]; then
+  alias pbcopy='pbcopy && pbpaste'
+fi
+
+# Incremental search
+if [[ -x `which peco` ]]; then
+  # ghq
+  alias g='cd $(ghq root)/$(ghq list | peco)'
+
+  # kube
+  alias k='kubectl'
+  alias kc='kubectx | peco | xargs kubectx'
+  alias kn='kubens | peco | xargs kubens'
+fi
+
+# exa general use
+if [[ -x `which exa` ]]; then
+  alias ls='exa -la'
+  alias ll='exa -labGF --git'                                            # long list
+  alias l='exa -lbhHigUmuSa@ --time-style=long-iso --git --color-scale'  # all + extended list
+  # specialty views
+  alias lt='exa --tree --level=5'                                        # tree
+fi
+
+# lazygit
+if [[ -x `which lazygit` ]]; then
+  alias lg="lazygit"
+fi
+
+# argo workflows
+if [[ -x `which argo` ]]; then
+  alias atc="argo template create"
+  alias atd="argo template delete"
+fi
+
+# nvim
+if [[ -x `which nvim` ]]; then
+  alias n="nvim"
+  alias vim="nvim"
+fi
+
