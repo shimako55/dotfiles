@@ -19,3 +19,5 @@ printf '\eP$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "zsh"}}\x9c'
 
 # zoxide
 eval "$(zoxide init zsh --cmd=j)"
+
+export OPENAI_API_KEY=$(gpg --decrypt ~/.credentials/secret.txt.gpg 2>/dev/null)
