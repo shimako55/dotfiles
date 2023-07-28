@@ -1,6 +1,8 @@
 echo "loading zshrc"
 
 export HISTFILE=${HOME}/.zsh_history
+export OPENAI_API_KEY=$(gpg --decrypt ~/.credentials/secret.txt.gpg 2>/dev/null)
+export PATH=$PATH:$(go env GOPATH)/bin
 
 # Aliases in interactive, login shell
 [[ -f $ZDOTDIR/.zsh_aliases ]] && . $ZDOTDIR/.zsh_aliases
@@ -11,13 +13,6 @@ eval "$(starship init zsh)"
 # direnv
 eval "$(direnv hook zsh)"
 
-# golang
-export PATH=$PATH:$(go env GOPATH)/bin
-
-# Warpify subshell
-printf '\eP$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "zsh"}}\x9c'
-
 # zoxide
 eval "$(zoxide init zsh --cmd=j)"
 
-export OPENAI_API_KEY=$(gpg --decrypt ~/.credentials/secret.txt.gpg 2>/dev/null)
