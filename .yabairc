@@ -24,6 +24,7 @@ yabai -m rule --add app="^iTerm2$"                                          mana
 yabai -m rule --add app="^DeepL$"                                           manage=off
 yabai -m rule --add app="^AppCleaner$"                                      manage=off
 yabai -m rule --add app="^プレビュー|Preview$"                              manage=off
+yabai -m rule --add app="^iD$"                                              manage=off
 
 
 # global settings
