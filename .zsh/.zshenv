@@ -9,3 +9,4 @@ export HISTSIZE=1000
 export SAVEHIST=100000
 setopt hist_ignore_dups
 
+[ -f $ZDOTDIR/.zshenv_local ] && . $ZDOTDIR/.zshenv_local
