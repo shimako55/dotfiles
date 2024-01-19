@@ -30,9 +30,11 @@ if [[ -x `which peco` ]]; then
   alias g='cd $(ghq root)/$(ghq list | peco)'
 
   # kube
-  alias k='kubectl'
-  alias kc='kubectx | peco | xargs kubectx'
-  alias kn='kubens | peco | xargs kubens'
+  if [[ -x `which kubectl` ]]; then
+    alias k='kubectl'
+    alias kc='kubectx | peco | xargs kubectx'
+    alias kn='kubens | peco | xargs kubens'
+  fi
 fi
 
 # exa general use
@@ -61,3 +63,7 @@ if [[ -x `which nvim` ]]; then
   alias vim="nvim"
 fi
 
+# cursor
+if [[ -x `which cursor` ]]; then
+  alias c="cursor"
+fi
