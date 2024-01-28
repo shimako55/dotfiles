@@ -1,0 +1,28 @@
+{
+    "window.commandCenter": 1,
+    "git.openRepositoryInParentFolders": "never",
+    "editor.accessibilitySupport": "on",
+    "redhat.telemetry.enabled": true,
+    "yaml.customTags": [
+    ],
+    "yaml.schemas": {
+        "https://raw.githubusercontent.com/argoproj/argo-workflows/main/api/jsonschema/schema.json": "*.yaml",
+    },
+    "json.schemas": [
+    ],
+    "workbench.colorTheme": "yuyuko-vim-vsc",
+    "files.autoSave": "onWindowChange",
+    "editor.fontFamily": "'MesloLGS NF', Menlo, Monaco, 'Courier New', monospace",
+    "editor.codeLensFontFamily": "'MesloLGS NF'",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "editor.cursorSurroundingLines": 18,
+    "workbench.editor.enablePreview": false,
+    "window.zoomLevel": -2,
+    "editor.fontSize": 16,
+    "editor.fontWeight": "normal",
+    "terminal.integrated.fontSize": 16,
+    "window.nativeTabs": true,
+    "gitlens.hovers.currentLine.over": "line"
+}

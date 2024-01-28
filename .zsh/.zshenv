@@ -10,3 +10,5 @@ export SAVEHIST=100000
 setopt hist_ignore_dups
 
 [ -f $ZDOTDIR/.zshenv_local ] && . $ZDOTDIR/.zshenv_local
+
+export RUNEWIDTH_EASTASIAN=0

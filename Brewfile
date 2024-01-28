@@ -97,8 +97,6 @@ mas "RunCat", id: 1429033973
 vscode "FaroSystemAppender constructor"
 vscode "asvetliakov.vscode-neovim"
 vscode "eamodio.gitlens"
-vscode "GitHub.copilot"
-vscode "GitHub.copilot-chat"
 vscode "golang.go"
 vscode "hylwxqwq.yuyuko-vim-vsc"
 vscode "MS-CEINTL.vscode-language-pack-ja"
