@@ -21,3 +21,4 @@ eval "$(zoxide init zsh --cmd=j)"
 
 # atuin
 eval "$(atuin init zsh --disable-up-arrow)"
+
