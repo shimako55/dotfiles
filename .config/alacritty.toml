@@ -1,0 +1,11 @@
+########
+# FONT #
+########
+
+[font]
+
+# Normal font style
+normal = { family = "MesloLGS NF", style = "Regular" }  # Default for Linux/BSD: "monospace", Regular
+
+# Font size in points
+size = 16  # Default: 11.25
