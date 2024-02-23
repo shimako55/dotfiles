@@ -1,7 +1,8 @@
 ---
-"pane_group:add_up": alt-cmd-d
 "terminal:copy_outputs": cmd-c
-"input:open_completion_suggestions": tab
 "terminal:open_block_list_context_menu_via_keybinding": none
 "terminal:copy": none
 "editor_view:insert_newline": none
+"workspace:show_command_search": none
+"input:open_completion_suggestions": tab
+"pane_group:add_up": alt-cmd-d

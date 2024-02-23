@@ -1,27 +1,16 @@
-echo "loading interactive and login shell alias"
-
 # coreutils
 alias ..='cd ..'
-alias rm='rm -i'
+alias mkdir='mkdir -p'
 alias ls='ls -la --color=auto'
 alias ll='ls -laF --color=auto'
-alias df='df -h'
-alias du='du -h'
-alias mkdir='mkdir -p'
-
 alias grep='grep --color=auto'
 
-# GNU
+# GNU sed
 if [[ -x `which gsed` ]]; then
   alias sed="gsed"
 fi
 if [[ -x `which tree` ]]; then
   alias tree="tree -I 'node_modules|vendor' -L 5"
-fi
-
-# OSX
-if [[ -x `which pbcopy` ]]; then
-  alias pbcopy='pbcopy && pbpaste'
 fi
 
 # Incremental search
@@ -49,12 +38,6 @@ fi
 # lazygit
 if [[ -x `which lazygit` ]]; then
   alias lg="lazygit"
-fi
-
-# argo workflows
-if [[ -x `which argo` ]]; then
-  alias atc="argo template create"
-  alias atd="argo template delete"
 fi
 
 # nvim
