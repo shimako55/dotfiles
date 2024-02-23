@@ -27,3 +27,6 @@ eval "$(atuin init zsh --disable-up-arrow)"
 
 # vim mode
 source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+function zvm_after_init() {
+   zvm_bindkey viins '^R' atuin-search
+}
