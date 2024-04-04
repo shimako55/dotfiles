@@ -50,3 +50,4 @@ fi
 if [[ -x `which cursor` ]]; then
   alias c="cursor"
 fi
+

@@ -3,8 +3,12 @@ export HISTFILE=${HOME}/.zsh_history
 export PATH=$PATH:$(go env GOPATH)/bin
 export RUNEWIDTH_EASTASIAN=0
 export PATH="${HOMEBREW_PREFIX}/opt/openssl/bin:$PATH"
+
+export XDG_CONFIG_HOME=$HOME/.config
+
 export HISTSIZE=1000
 export SAVEHIST=100000
+
 setopt hist_ignore_dups
 
 # Aliases in interactive, login shell

@@ -1,0 +1,12 @@
+k9s:
+  readOnly: true
+  ui:
+    enableMouse: true
+    headless: true
+    logoless: true
+    crumbsless: false
+    noIcons: false
+    # Toggles reactive UI. This option provide for watching on disk artifacts changes and update the UI live  Defaults to false.
+    reactive: true
+    # Uses in_the_navy skin located in your $XDG_CONFIG_HOME/skins/in_the_navy.yaml
+    skin: nightfox
