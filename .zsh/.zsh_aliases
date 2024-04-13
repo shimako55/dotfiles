@@ -1,6 +1,5 @@
 # coreutils
 alias ..='cd ..'
-alias mkdir='mkdir -p'
 alias ls='ls -la --color=auto'
 alias ll='ls -laF --color=auto'
 alias grep='grep --color=auto'
