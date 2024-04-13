@@ -1,5 +1,5 @@
 k9s:
-  readOnly: true
+  readOnly: false
   ui:
     enableMouse: true
     headless: true
