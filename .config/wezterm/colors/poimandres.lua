@@ -5,6 +5,7 @@ local colors = {
 	base = {
 		yellow = '#FFFAC2',
 		teal1 = '#5DE4C7',
+		-- teal1 = '#404350',
 		teal2 = '#5FB3A1',
 		teal3 = '#42675A',
 		blue1 = '#89DDFF',

@@ -8,10 +8,10 @@ local config = wezterm.config_builder()
 
 -- For example, changing the color scheme:
 -- config.color_scheme = 'Dracula'
-config.color_scheme = "Poimandres"
+-- config.color_scheme = "Poimandres"
 --
--- local poimandres = require('colors/poimandres').setup {}
--- config.colors = poimandres
+local poimandres = require('colors/poimandres').setup {}
+config.colors = poimandres
 
 
 config.window_decorations = "NONE"
