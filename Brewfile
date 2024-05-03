@@ -92,6 +92,7 @@ cask "tunnelblick"
 cask "visual-studio-code"
 cask "warp"
 cask "wezterm"
+cask "wireshark"
 mas "Amphetamine", id: 937984704
 mas "Expressions", id: 913158085
 mas "Glide", id: 1593045116
