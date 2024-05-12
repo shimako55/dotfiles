@@ -20,6 +20,9 @@ if [[ "$(uname)" == "Darwin" ]]; then
   echo "Enable tap to click (Trackpad)"
   defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 
+  echo "DS don't write"
+  defaults write com.apple.desktopservices DSDontWriteNetworkStores True
+
   echo "Kill affected applications"
 
   for app in Finder Dock SystemUIServer; do killall "$app" >/dev/null 2>&1; done
