@@ -32,3 +32,10 @@ alt - t : yabai -m window --toggle float;\
 # toggle window zoom
 alt - f : yabai -m window --toggle zoom-fullscreen
 
+# send display to space
+alt + cmd - 1: yabai -m space --display 1
+alt + cmd - 2: yabai -m space --display 2
+
+# Swapping windows across displays
+shift + ctrl - left : WIN_ID=$(yabai -m query --windows --window | jq '.id'); yabai -m window --swap west; [[ ! $? == 0 ]] && (yabai -m display --focus west; yabai -m window last --insert east; yabai -m window --focus $WIN_ID; yabai -m window --display prev; yabai -m window --focus $WIN_ID);
+shift + ctrl - right : WIN_ID=$(yabai -m query --windows --window | jq '.id'); yabai -m window --swap east; [[ ! $? == 0 ]] && (yabai -m display --focus east; yabai -m window first --insert west; yabai -m window --focus $WIN_ID; yabai -m window --display next; yabai -m window --focus $WIN_ID);

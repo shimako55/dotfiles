@@ -21,10 +21,10 @@ yabai -m rule --add app="^システム設定|System Settings|System Preferences$
 yabai -m rule --add app="^Goland$"                                          manage=off
 yabai -m rule --add app="^Yubico Authenticator$"                            manage=off
 yabai -m rule --add app="^Yamaha ZG Controller$"                            manage=off
-yabai -m rule --add app="^iTerm2$"                                          manage=off
 yabai -m rule --add app="^DeepL$"                                           manage=off sub-layer=normal
 yabai -m rule --add app="^プレビュー|Preview$"                              manage=off
 yabai -m rule --add app="^iD$"                                              manage=off
+yabai -m rule --add app="^CleanShot"                                              manage=off
 yabai -m rule --add app="^時計$"                                            sticky=on sub-layer=above
 
 
