@@ -21,7 +21,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
   defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 
   echo "DS don't write"
-  defaults write com.apple.desktopservices DSDontWriteNetworkStores True
+  defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
 
   echo "Kill affected applications"
 
