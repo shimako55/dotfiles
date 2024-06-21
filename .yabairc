@@ -26,6 +26,7 @@ yabai -m rule --add app="^プレビュー|Preview$"                             
 yabai -m rule --add app="^iD$"                                              manage=off
 yabai -m rule --add app="^CleanShot"                                              manage=off
 yabai -m rule --add app="^時計$"                                            sticky=on sub-layer=above
+yabai -m rule --add app="^Slack"                                              manage=off
 
 
 # global settings
