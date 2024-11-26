@@ -1,8 +1,9 @@
 export EDITOR=nvim
 export HISTFILE=${HOME}/.zsh_history
 export PATH=$PATH:$(go env GOPATH)/bin
-export RUNEWIDTH_EASTASIAN=0
 export PATH="${HOMEBREW_PREFIX}/opt/openssl/bin:$PATH"
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+export RUNEWIDTH_EASTASIAN=0
 
 export XDG_CONFIG_HOME=$HOME/.config
 
