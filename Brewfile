@@ -1,4 +1,5 @@
 tap "1password/tap"
+tap "argoproj/tap"
 tap "homebrew/bundle"
 tap "homebrew/core"
 tap "koekeishiya/formulae"
@@ -67,6 +68,7 @@ brew "w3m"
 brew "yq"
 brew "zoxide"
 brew "zsh-vi-mode"
+brew "argoproj/tap/kubectl-argo-rollouts"
 brew "koekeishiya/formulae/skhd"
 brew "koekeishiya/formulae/yabai"
 cask "1password"
@@ -108,7 +110,6 @@ mas "Expressions", id: 913158085
 mas "Glide", id: 1593045116
 mas "PopClip", id: 445189367
 mas "RunCat", id: 1429033973
-vscode "farosystemappender constructor"
 vscode "asvetliakov.vscode-neovim"
 vscode "bierner.markdown-mermaid"
 vscode "bpruitt-goddard.mermaid-markdown-syntax-highlighting"
