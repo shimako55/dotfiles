@@ -49,3 +49,7 @@ if [[ -x `which cursor` ]]; then
   alias c="cursor"
 fi
 
+# k9s
+if [[ -x `which k9s` ]]; then
+  alias k9s="k9s --readonly"
+fi

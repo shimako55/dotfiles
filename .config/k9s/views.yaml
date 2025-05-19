@@ -1,0 +1,20 @@
+# $XDG_CONFIG_HOME/k9s/views.yaml
+views:
+  # Alters the pod view column layout. Uses GVR as key
+  v1/nodes:
+    # Overrides default sort column
+    sortColumn: AGE:asc
+    columns:
+      - NAME
+      - AGE
+      - L_SERVICE:.metadata.labels.service
+      - L_INST-TYPE:.metadata.labels.beta\.kubernetes\.io\/instance-type
+      - L_INST-CORE:.metadata.labels.karpenter\.k8s\.aws/instance-cpu
+      - L_INST-MEM:.metadata.labels.karpenter\.k8s\.aws/instance-memory
+  v1/pods:
+    sortColumn: STATUS:desc
+    columns:
+      - NAME
+      - AGE
+  snapshot.storage.k8s.io/v1/volumesnapshots:
+    sortColumn: READYTOUSE:asc
