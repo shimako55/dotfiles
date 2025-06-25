@@ -41,6 +41,7 @@ fi
 # nvim
 if [[ -x `which nvim` ]]; then
   alias n="nvim"
+  alias vi="nvim"
   alias vim="nvim"
 fi
 
