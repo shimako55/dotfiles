@@ -5,7 +5,6 @@ export HISTFILE="${HOME}/.zsh_history"
 export HISTSIZE=1000
 export SAVEHIST=100000
 
-export PATH="${PATH}:$(go env GOPATH)/bin"
 export PATH="${HOMEBREW_PREFIX}/opt/openssl/bin:${PATH}"
 export PATH="${KREW_ROOT:-${HOME}/.krew}/bin:${PATH}"
 export PATH="${HOME}/.local/bin:${PATH}"

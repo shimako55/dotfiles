@@ -1,5 +1,7 @@
 setopt hist_ignore_dups
 
+export PATH="${PATH}:$(go env GOPATH)/bin"
+
 # Aliases in interactive, login shell
 [[ -f ${ZDOTDIR}/.zsh_aliases ]] && . ${ZDOTDIR}/.zsh_aliases
 

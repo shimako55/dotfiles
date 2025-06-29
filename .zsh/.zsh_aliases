@@ -43,6 +43,8 @@ if [[ -x `which nvim` ]]; then
   alias n="nvim"
   alias vi="nvim"
   alias vim="nvim"
+  alias ex="nvim"
+  # alias ed="nvim"
 fi
 
 # cursor
