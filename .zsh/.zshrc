@@ -48,7 +48,7 @@ mkd() { mkdir -p "$@" && cd "$@"; }
 # gh get function that changes directory
 ghg() {
     if [ -z "$1" ]; then
-        echo "Usage: gh-get <repository>"
+        echo "Usage: ghg <repository>"
         return 1
     fi
     ghq get "$1" && cd "$(ghq root)/$(ghq list | fzf)"
