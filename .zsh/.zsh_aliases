@@ -15,13 +15,13 @@ fi
 # Incremental search
 if [[ -x `which peco` ]]; then
   # ghq
-  alias g='cd $(ghq root)/$(ghq list | peco)'
+  alias g='cd $(ghq root)/$(ghq list | fzf)'
 
   # kube
   if [[ -x `which kubectl` ]]; then
     alias k='kubectl'
-    alias kc='kubectx | peco | xargs kubectx'
-    alias kn='kubens | peco | xargs kubens'
+    alias kc='kubectx | fzf | xargs kubectx'
+    alias kn='kubens | fzf | xargs kubens'
   fi
 fi
 
@@ -31,6 +31,15 @@ if [[ -x `which eza` ]] then
   alias l='eza --icons --git -lbhHigUmuSa@ --time-style=long-iso --color-scale'
   alias lt='eza --tree --level=10'
   alias lti='eza --icons --git --tree --level=10'
+fi
+
+if [[ -x `which bat` ]] then
+  alias cat='bat'
+fi
+
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    alias co='pbcopy'
+    alias pa='pbpaste'
 fi
 
 # lazygit
@@ -45,11 +54,6 @@ if [[ -x `which nvim` ]]; then
   alias vim="nvim"
   alias ex="nvim"
   # alias ed="nvim"
-fi
-
-# cursor
-if [[ -x `which cursor` ]]; then
-  alias c="cursor"
 fi
 
 # k9s
