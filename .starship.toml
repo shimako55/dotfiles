@@ -39,12 +39,13 @@ disabled = true
 
 # Shows current directory
 [directory]
-truncation_length = 20
-#truncation_symbol = "…/"
+truncation_length = 8
+truncation_symbol = "…/"
 home_symbol = " ~"
 read_only_style = "197"
 read_only = "  "
 format = " [$path]($style)[$read_only]($read_only_style) "
+
 
 # Shows current git branch
 [git_branch]
@@ -72,8 +73,25 @@ deleted = " "
 
 # Shows kubernetes context and namespace
 [kubernetes]
-format = ' [ﴱ $context\($namespace\)](bold purple) '
+format = '[ﴱ $context\($namespace\)](bold purple) '
 disabled = false
+
+# Show time status
+[time]
+disabled = false
+format = ' [$time]($style)'
+
+[status]
+style = "fg:green"
+format = '[$symbol]($style)'
+disabled = false
+success_symbol = "[  ]($style)"
+symbol = "[  $status $common_meaning](bold fg:red)"
+
+[container]
+disabled = false
+format = '[$symbol \[$name\]]($style) '
+
 
 # ---
 

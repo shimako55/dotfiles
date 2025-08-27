@@ -3,6 +3,7 @@ alias ..='cd ..'
 alias ls='ls -la --color=auto'
 alias ll='ls -laF --color=auto'
 alias grep='grep --color=auto'
+alias now='date "+%Y-%m-%d %H:%M:%S"'
 
 # GNU sed
 if [[ -x `which gsed` ]]; then
@@ -59,4 +60,9 @@ fi
 # k9s
 if [[ -x `which k9s` ]]; then
   alias k9s="k9s --readonly"
+fi
+
+# pip plamo-translate
+if [[ -x `which plamo-translate` ]]; then
+  alias pt="plamo-translate --to Japanese"
 fi

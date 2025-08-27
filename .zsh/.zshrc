@@ -53,3 +53,11 @@ ghg() {
     fi
     ghq get "$1" && cd "$(ghq root)/$(ghq list | fzf)"
 }
+
+# pnpm
+export PNPM_HOME="/Users/sakamoto/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
