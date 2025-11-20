@@ -4,6 +4,8 @@ local wezterm = require("wezterm")
 -- This will hold the configuration.
 local config = wezterm.config_builder()
 
+local act = wezterm.action
+
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
@@ -28,17 +30,22 @@ config.keys = {
 	{
 		key = "d",
 		mods = "SHIFT|CTRL",
-		action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
+		action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }),
+	},
+	{
+		key = "Enter",
+		mods = "SHIFT",
+		action = act.SendString("\x1b\r"),
 	},
 	{
 		key = "]",
 		mods = "CTRL",
-		action = wezterm.action.PaneSelect,
+		action = act.PaneSelect({}), -- 引数なしなら {} を付ける
 	},
 	{
 		key = "n",
 		mods = "SHIFT|CTRL",
-		action = wezterm.action.ToggleFullScreen,
+		action = act.ToggleFullScreen,
 	},
 }
 
