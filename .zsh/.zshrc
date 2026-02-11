@@ -67,3 +67,11 @@ export PATH=$PATH:$(go env GOPATH)/bin
 
 # Load local machine-specific settings if present
 [[ -f "$HOME/.zshrc.local" ]] && source "$HOME/.zshrc.local"
+
+# git-wt
+eval "$(git wt --init zsh)"
+
+# bun completions
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
