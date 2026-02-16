@@ -13,3 +13,7 @@ export XDG_CONFIG_HOME="${HOME}/.config"
 export CLAUDE_CONFIG_DIR="${HOME}/.config/claude"
 export RUNEWIDTH_EASTASIAN=0
 export TENV_AUTO_INSTALL=true
+
+# Load local machine-specific settings if present
+[[ -f "$HOME/.zshenv.local" ]] && source "$HOME/.zshenv.local"
+
