@@ -14,6 +14,8 @@ export CLAUDE_CONFIG_DIR="${HOME}/.config/claude"
 export RUNEWIDTH_EASTASIAN=0
 export TENV_AUTO_INSTALL=true
 
+export OPENCODE_EXPERIMENTAL=true
+
 # Load local machine-specific settings if present
 [[ -f "$HOME/.zshenv.local" ]] && source "$HOME/.zshenv.local"
 

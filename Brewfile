@@ -4,9 +4,12 @@ tap "argoproj/tap"
 tap "homebrew/bundle"
 tap "homebrew/core"
 tap "koekeishiya/formulae"
+tap "manaflow-ai/cmux"
+tap "steipete/tap"
 tap "textualize/homebrew"
 tap "umlx5h/tap"
 tap "unhappychoice/tap"
+tap "xdevplatform/tap"
 brew "giflib"
 brew "highway"
 brew "argocd"
@@ -93,6 +96,7 @@ brew "trivy"
 brew "ugrep"
 brew "uv"
 brew "wireshark", link: false
+brew "xcodegen"
 brew "yq"
 brew "zoxide"
 brew "zsh-vi-mode"
@@ -100,14 +104,21 @@ brew "anomalyco/tap/opencode"
 brew "argoproj/tap/kubectl-argo-rollouts"
 brew "koekeishiya/formulae/skhd"
 brew "koekeishiya/formulae/yabai"
+brew "steipete/tap/gifgrep"
+brew "steipete/tap/gogcli"
+brew "steipete/tap/peekaboo"
+brew "steipete/tap/summarize"
 brew "umlx5h/tap/gtrash"
 brew "unhappychoice/tap/gittype"
 cask "1password"
+cask "1password-cli"
 cask "anki"
 cask "appcleaner"
 cask "azookey"
 cask "bettertouchtool"
 cask "brave-browser"
+cask "manaflow-ai/cmux/cmux"
+cask "steipete/tap/codexbar"
 cask "cursor"
 cask "cursorsense"
 cask "expressions"
@@ -130,8 +141,10 @@ cask "visual-studio-code"
 cask "warp"
 cask "wezterm"
 cask "wireshark-app"
+cask "xdevplatform/tap/xurl"
 mas "Amphetamine", id: 937984704
 mas "Corner Time", id: 6746757189
+mas "Developer", id: 640199958
 mas "Expressions", id: 913158085
 mas "Glide", id: 1593045116
 mas "Jamf Trust", id: 1608041266
@@ -140,8 +153,14 @@ mas "Klack", id: 6446206067
 mas "RunCat", id: 1429033973
 mas "Slack", id: 803453959
 mas "Tailscale", id: 1475387142
+mas "Xcode", id: 497799835
 mas "Yubico Authenticator", id: 1497506650
 vscode "bierner.markdown-mermaid"
 vscode "golang.go"
 vscode "juniorschmidt.lunar-vscode-theme"
 vscode "openai.chatgpt"
+uv "jiratui"
+uv "litellm[proxy]"
+uv "markitdown-mcp"
+uv "nano-pdf"
+uv "plamo-translate"
