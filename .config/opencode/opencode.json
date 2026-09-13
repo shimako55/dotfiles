@@ -1,21 +1,22 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "model": "anthropic/claude-sonnet-4-6",
-  "autoupdate": true,
-  "plugin": ["@mohak34/opencode-notifier@latest"],
-  "permission": {
-    "edit": "allow",
-    "bash": "allow",
-    "read": "allow",
-    "grep": "allow",
-    "glob": "allow",
-    "list": "allow",
-    "skill": "allow",
-    "todowrite": "allow",
-    "todoread": "allow",
-    "webfetch": "allow",
-    "websearch": "allow",
-    "question": "allow",
-    "lsp": "allow"
-  }
+  "provider": {
+    "empero": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Empero Free",
+      "options": {
+        "baseURL": "https://free.empero.org/v1"
+      },
+      "models": {
+        "Qwen/Qwen3.8-27B-FP8": {
+          "name": "Qwen3.8-27B-FP8",
+          "limit": {
+            "context": 131072,
+            "output": 32768
+          }
+        }
+      }
+    }
+  },
+  "model": "empero/Qwen/Qwen3.8-27B-FP8"
 }
