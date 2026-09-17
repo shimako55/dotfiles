@@ -66,7 +66,8 @@ export PATH=$PATH:$(go env GOPATH)/bin
 [[ -f "$HOME/.zshrc.local" ]] && source "$HOME/.zshrc.local"
 
 # git-wt
-eval "$(git wt --init zsh)"
+# eval "$(git wt --init zsh)"
+eval "$(git-wt init zsh)"
 
 # bun completions
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
