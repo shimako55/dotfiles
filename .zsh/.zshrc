@@ -14,9 +14,6 @@ eval "$(direnv hook zsh)"
 # zoxide
 eval "$(zoxide init zsh --cmd=j)"
 
-# asdf
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
 # atuin
 eval "$(atuin init zsh --disable-up-arrow)"
 
