@@ -1,11 +1,12 @@
 tap "1password/tap"
+tap "ahmedelgabri/tap"
 tap "anomalyco/tap"
 tap "argoproj/tap"
 tap "asmvik/formulae", "https://github.com/asmvik/homebrew-formulae.git"
 tap "homebrew/bundle"
 tap "homebrew/core"
 tap "manaflow-ai/cmux"
-tap "openclaw/tap"
+tap "openclaw/tap", trusted: { casks: ["goplaces"] }
 tap "steipete/tap"
 tap "textualize/homebrew"
 tap "umlx5h/tap"
@@ -43,6 +44,8 @@ brew "curl"
 brew "dash-shell"
 # Library and utilities for processing GIFs
 brew "giflib"
+# TIFF library and utilities
+brew "libtiff"
 # Secure runtime for JavaScript and TypeScript
 brew "deno"
 # File comparison utilities
@@ -186,7 +189,7 @@ brew "unbound"
 # Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
 # Network analyzer and capture tool - without graphical user interface
-brew "wireshark"
+brew "wireshark", link: false
 # Generate your Xcode project from a spec file and your folder structure
 brew "xcodegen"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
@@ -195,10 +198,10 @@ brew "yq"
 brew "zoxide"
 # Better and friendly vi(vim) mode plugin for ZSH
 brew "zsh-vi-mode"
+# Git custom command that enhances Git's native worktree functionality
+brew "ahmedelgabri/tap/git-wt", trusted: true
 # The AI coding agent built for the terminal.
 brew "anomalyco/tap/opencode", trusted: true
-# Modern Go client + CLI for the Google Places API (New)
-brew "openclaw/tap/goplaces", link: false
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Command-line interface for 1Password
@@ -226,8 +229,7 @@ cask "finicky"
 cask "font-hackgen-nerd"
 # Go (golang) IDE
 cask "goland"
-# Modern Go client + CLI for the Google Places API (New)
-cask "openclaw/tap/goplaces", trusted: true
+cask "goplaces"
 # Keyboard customiser
 cask "karabiner-elements"
 # Blocks all Keyboard and TouchBar input
@@ -278,6 +280,11 @@ vscode "bierner.markdown-mermaid"
 vscode "golang.go"
 vscode "juniorschmidt.lunar-vscode-theme"
 vscode "openai.chatgpt"
+go "github.com/spf13/cobra-cli"
+go "github.com/go-delve/delve/cmd/dlv"
+go "github.com/golangci/golangci-lint/cmd/golangci-lint"
+go "honnef.co/go/tools/cmd/staticcheck"
+go "github.com/google/yamlfmt/cmd/yamlfmt"
 uv "jiratui"
 uv "litellm[proxy]"
 uv "markitdown-mcp"
@@ -288,5 +295,6 @@ uv "plamo-translate"
 krew "access-matrix"
 krew "krew"
 krew "oidc-login"
+npm "@openai/codex"
 npm "corepack"
 npm "openclaw"

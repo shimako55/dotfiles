@@ -75,3 +75,6 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
 export TWITTER_BROWSER="brave"
+
+# OpenClaw Completion
+[ -f "${HOME}/.openclaw/completions/openclaw.zsh" ] && source "${HOME}/.openclaw/completions/openclaw.zsh"
