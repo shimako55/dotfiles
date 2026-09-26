@@ -34,8 +34,6 @@ brew "btop"
 brew "certifi", link: false
 # Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
 brew "clang-format"
-# Manage multiple AI agents like Claude Code, Aider and Codex in your terminal
-brew "claude-squad"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Get a file from an HTTP, HTTPS or FTP server
@@ -140,8 +138,6 @@ brew "neovim"
 brew "nkf"
 # Open-source, cross-platform JavaScript runtime environment
 brew "node"
-# Modern shell for the GitHub era
-brew "nushell"
 # Simplistic interactive filtering tool
 brew "peco"
 # Draw UML diagrams
@@ -188,8 +184,6 @@ brew "ugrep"
 brew "unbound"
 # Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
-# Network analyzer and capture tool - without graphical user interface
-brew "wireshark", link: false
 # Generate your Xcode project from a spec file and your folder structure
 brew "xcodegen"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
@@ -206,8 +200,6 @@ brew "anomalyco/tap/opencode", trusted: true
 cask "1password"
 # Command-line interface for 1Password
 cask "1password-cli"
-# Memory training application
-cask "anki"
 # Application uninstaller
 cask "appcleaner"
 # Japanese input method
@@ -216,10 +208,7 @@ cask "azookey"
 cask "bettertouchtool"
 # Web browser focusing on privacy
 cask "brave-browser"
-cask "cmux"
 cask "codexbar"
-# Write, edit, and chat about your code with AI
-cask "cursor"
 # Adjusts cursor acceleration and sensitivity
 cask "cursorsense"
 # Regular expressions manager app
@@ -227,8 +216,6 @@ cask "expressions"
 # Utility for customizing which browser to start
 cask "finicky"
 cask "font-hackgen-nerd"
-# Go (golang) IDE
-cask "goland"
 cask "goplaces"
 # Keyboard customiser
 cask "karabiner-elements"
@@ -247,22 +234,12 @@ cask "obs"
 cask "obsidian"
 # Replacement for Docker Desktop
 cask "orbstack"
-# Collaboration platform for API development
-cask "postman"
 # Control your tools with a few keystrokes
 cask "raycast"
 # Tool to reverse the direction of scrolling
 cask "scroll-reverser"
-# Free and open-source OpenVPN client
-cask "tunnelblick"
-# Open-source code editor
-cask "visual-studio-code"
-# Rust-based terminal
-cask "warp"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
-# Network protocol analyzer
-cask "wireshark-app"
 cask "xurl"
 mas "Amphetamine", id: 937984704
 mas "Corner Time", id: 6746757189
@@ -275,11 +252,6 @@ mas "RunCat", id: 1429033973
 mas "Slack", id: 803453959
 mas "Tailscale", id: 1475387142
 mas "Xcode", id: 497799835
-mas "Yubico Authenticator", id: 1497506650
-vscode "bierner.markdown-mermaid"
-vscode "golang.go"
-vscode "juniorschmidt.lunar-vscode-theme"
-vscode "openai.chatgpt"
 go "github.com/spf13/cobra-cli"
 go "github.com/go-delve/delve/cmd/dlv"
 go "github.com/golangci/golangci-lint/cmd/golangci-lint"
