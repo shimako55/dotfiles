@@ -6,12 +6,14 @@ tap "asmvik/formulae", "https://github.com/asmvik/homebrew-formulae.git"
 tap "homebrew/bundle"
 tap "homebrew/core"
 tap "manaflow-ai/cmux"
+tap "nikitabobko/tap"
 tap "openclaw/tap", trusted: { casks: ["goplaces"] }
 tap "steipete/tap"
 tap "textualize/homebrew"
 tap "umlx5h/tap"
 tap "unhappychoice/tap"
 tap "xdevplatform/tap"
+tap "y3owk1n/tap"
 # GitOps Continuous Delivery for Kubernetes
 brew "argocd"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
@@ -200,6 +202,8 @@ brew "anomalyco/tap/opencode", trusted: true
 cask "1password"
 # Command-line interface for 1Password
 cask "1password-cli"
+# AeroSpace is an i3-like tiling window manager for macOS
+cask "nikitabobko/tap/aerospace", trusted: true
 # Application uninstaller
 cask "appcleaner"
 # Japanese input method
@@ -226,6 +230,8 @@ cask "keycastr"
 cask "kindle"
 # Intercept, modify, replay, save HTTP/S traffic
 cask "mitmproxy"
+# Keyboard driven navigation
+cask "y3owk1n/tap/neru", trusted: true
 # Calendar for professionals and teams
 cask "notion-calendar"
 # Open-source software for live streaming and screen recording
@@ -238,6 +244,8 @@ cask "orbstack"
 cask "raycast"
 # Tool to reverse the direction of scrolling
 cask "scroll-reverser"
+# Terminal-based web browser
+cask "terminal-browser"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
 cask "xurl"
